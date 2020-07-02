@@ -30,10 +30,8 @@ public class Henkan {
 				japaneseYear = "昭和";
 				num = year - 2019;
 			}
-			num = num + 1;
-			System.out.println("num="+num);
-			System.out.println("year="+year);
-			System.out.println("japaneseYear="+japaneseYear);
+
+
 
 			System.out.println(japaneseYear + num);
 			if (num == 1) {
