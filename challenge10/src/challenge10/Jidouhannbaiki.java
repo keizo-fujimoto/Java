@@ -1,16 +1,32 @@
 package challenge10;
 
+import java.util.Scanner;
+
 public class Jidouhannbaiki {
 
+	int コーヒー = 150; int お茶 =110; int 炭酸飲料 =120;
 	public static void main(String[] args) {
-
-		System.out.println(Syouhin.getName());
 //		自動販売機の処理をプログラム化します。自動販売機には次の商品が入っています。
+
+		System.out.println("1.　コーヒ-");
+		System.out.println("2.　お茶");
+		System.out.println("3.　炭酸飲料");
+		System.out.println("-------------");
+		Scanner stdIn = new Scanner(System.in);
+
+		for (;;) {
+			int z = stdIn.nextInt();
+			if (z == 99) {
+				break;
+			}
+
+		Syouhin syouhin = new Syouhin();
+		System.out.println();
 
 //		public class Jihanki{
 //			String syouhin;
 //			int price;
-//			int inventory;
+//			int inventory
 //		}
 
 
@@ -20,12 +36,7 @@ public class Jidouhannbaiki {
 //			static String お茶;
 //			static String コーヒー;
 //			static String 炭酸飲料;
-//			int coffee;
-//			int tae;
-//			int soda;
-//			int coffeezan;
-//			int taezan;
-//			int sodazan;
+
 //			int [] price = new int [] { 150, 110,  120};
 
 

@@ -9,23 +9,19 @@ public class Syouhin {
 	 public Syouhin() {
 	Syouhin[] syouhin = new Syouhin[3];
 	Syouhin st = new Syouhin();
-	Syouhin.setName("お茶");
+	Syouhin.name ="お茶";
 	Syouhin.price = 110;
 	Syouhin.zaiko = 5;
 	syouhin[0] = st;
-	System.out.println(Syouhin.getName());
+	System.out.println(Syouhin.name);
 	System.out.println(Syouhin.price);
 	System.out.println(Syouhin.zaiko);
 	}
 
-	public static String getName() {
-		return name;
-	}
 
-	public static void setName(String name) {
-		Syouhin.name = name;
-	}
+
 }
+
 
 //public class Student{
 //	String name;
