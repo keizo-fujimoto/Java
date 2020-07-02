@@ -21,7 +21,7 @@ public class Jidouhannbaiki {
 				System.out.println();//（1.　コーヒー＋在庫）2本
 				System.out.println();//(２．お茶　　　+1本　)
 				System.out.println();//(３．炭酸飲料　+3本　　)
-				
+
 		//
 //				売上：1130円
 			}
@@ -125,4 +125,4 @@ public class Jidouhannbaiki {
 //
 //		売上：1130円
 
-}
+
