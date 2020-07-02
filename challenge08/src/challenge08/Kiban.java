@@ -18,7 +18,8 @@ public class Kiban {
 		table [a-1][b-1] = 1;
 		/*
 		for (int i = 1; i < table[1].length; i++) {
-			for (int j = 1; j < table[1].length; j++) {
+			for (int j = 1; j < table[1].length; j++)
+			 {
 				if (a-1 == i && b-1 == j) {
 					table[i][j] = 1;
 				}else {

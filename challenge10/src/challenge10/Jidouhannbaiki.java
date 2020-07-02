@@ -18,6 +18,12 @@ public class Jidouhannbaiki {
 			int z = stdIn.nextInt();
 			if (z == 99) {
 				break;
+				System.out.println();//（1.　コーヒー＋在庫）2本
+				System.out.println();//(２．お茶　　　+1本　)
+				System.out.println();//(３．炭酸飲料　+3本　　)
+				
+		//
+//				売上：1130円
 			}
 
 		Syouhin syouhin = new Syouhin();
@@ -66,9 +72,9 @@ public class Jidouhannbaiki {
 
 
 //		アンサー
-//		1.コーヒー
-//		2.お茶
-//		3.炭酸飲料
+//		1.コーヒー int 1. = 1. + コーヒー
+//		2.お茶		int2. = 2. + お茶
+//		3.炭酸飲料	int3. = 3. + 炭酸飲料
 //		表示例
 //
 //
@@ -84,9 +90,10 @@ public class Jidouhannbaiki {
 //
 //		表示例
 //
-//
-//
-//
+// zaiko = zaiko = stdIn
+// zaiko = zaiko = stdIn
+// zaiko = zaiko - stdIn
+// この考えだと表示しないのが難しい
 //
 //		Java
 //
