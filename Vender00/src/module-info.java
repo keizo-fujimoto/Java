@@ -1,0 +1,2 @@
+module Vender00 {
+}
