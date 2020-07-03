@@ -1,128 +1,56 @@
 package challenge10;
 
-import java.util.Scanner;
-
 public class Jidouhannbaiki {
 
-	int コーヒー = 150; int お茶 =110; int 炭酸飲料 =120;
 	public static void main(String[] args) {
-//		自動販売機の処理をプログラム化します。自動販売機には次の商品が入っています。
 
-		System.out.println("1.　コーヒ-");
-		System.out.println("2.　お茶");
-		System.out.println("3.　炭酸飲料");
-		System.out.println("-------------");
-		Scanner stdIn = new Scanner(System.in);
+		//入力した数値input
+		java.util.Scanner input = new java.util.Scanner(System.in);
+		//商品
+		String name = "コーヒー";
+		int price = 150;
+		String name1 = "お茶";
+		int price1 = 110;
+		String name2 = "炭酸飲料";
+		int price2 = 120;
+		//合計金額を覚えておく変数の準備。初期値は０円に設定。
+		int total = 0;
+		//繰り返し 14章
+		do {
+			//商品一覧を表示する
+			System.out.println("1." + name);
+			System.out.println("2." + name1);
+			System.out.println("3." + name2);
+			System.out.println("-------------");
 
-		for (;;) {
-			int z = stdIn.nextInt();
-			if (z == 99) {
+			//今回の入力値をselectに記録
+			int select = input.nextInt();
+			//もし99の値を入れたら終了する
+			if (select == 99) {
+
 				break;
-				System.out.println();//（1.　コーヒー＋在庫）2本
-				System.out.println();//(２．お茶　　　+1本　)
-				System.out.println();//(３．炭酸飲料　+3本　　)
+			}
+			//商品が売れる
+			switch (select) {
+			case 1: {
+				//売上計算。売上合計変数:totalに今回の売上をプラスして更新させます。
+				total = total + price;
+			}
+				break;
+			case 2: {
 
-		//
-//				売上：1130円
+				total = total + price1;
+			}
+				break;
+			case 3: {
+
+				total = total + price2;
+			}
 			}
 
-		Syouhin syouhin = new Syouhin();
-		System.out.println();
+		} while (true);
+		//売上
+		System.out.println("売上:" + total);
+	}
 
-//		public class Jihanki{
-//			String syouhin;
-//			int price;
-//			int inventory
-//		}
-
-
-
-
-//		public static void
-//			static String お茶;
-//			static String コーヒー;
-//			static String 炭酸飲料;
-
-//			int [] price = new int [] { 150, 110,  120};
-
-
-//			String [] shouhin = new String [] {コーヒー,お茶,炭酸飲料};
-
-
-		}
-//		コーヒー
-//		150円
-//		5本
-//		お茶
-//		110円
-//		5本
-//		炭酸飲料
-//		120円
-//		5本
-
-
-
-//		商品
-//		金額
-//		数
-
-//		販売はコンソールに商品を表示して対応する番号を入力してもらいます。
-		//Scanner stdIn = new Scanner(System.in);
-		//int syouhinn = stdIn.nextInt();
-
-
-//		アンサー
-//		1.コーヒー int 1. = 1. + コーヒー
-//		2.お茶		int2. = 2. + お茶
-//		3.炭酸飲料	int3. = 3. + 炭酸飲料
-//		表示例
-//
-//
-//
-//
-//		アンサー
-//		1．コーヒー
-//		2．お茶
-//		3．炭酸飲料
-//		-------------
-//
-//		もし売り切れなら商品を表示しないようにします。コーヒーが売り切れた場合の例です。
-//
-//		表示例
-//
-// zaiko = zaiko = stdIn
-// zaiko = zaiko = stdIn
-// zaiko = zaiko - stdIn
-// この考えだと表示しないのが難しい
-//
-//		Java
-//
-//		1
-//		2
-//		3
-//		２．お茶
-//		３．炭酸飲料
-//		-------------
-//
-//		99を入力するとプログラム終了です。その際に商品毎の残数と合計売上高を表示します。表示例です。
-//
-//		表示例
-//
-//
-//
-//
-//
-//		Java
-//
-//		1
-//		2
-//		3
-//		4
-//		5
-//		１．コーヒー　2本　
-//		２．お茶　　　1本　
-//		３．炭酸飲料　3本　　
-//
-//		売上：1130円
-
-
+}
