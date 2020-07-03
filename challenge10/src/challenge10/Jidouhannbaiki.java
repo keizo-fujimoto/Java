@@ -23,7 +23,7 @@ public class Jidouhannbaiki {
 			System.out.println("3." + name2);
 			System.out.println("-------------");
 
-			//今回の入力値をselectに記録
+			//選ぶやつも14章のselect
 			int select = input.nextInt();
 			//もし99の値を入れたら終了する
 			if (select == 99) {

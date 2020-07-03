@@ -136,7 +136,7 @@ public class Vender {
 		 */
 		public static int sell(Item[] items, int select) {
 			//商品が売れる、売り上げが増える
-			 ;
+			select =select-1 ;
 			//売り上げの計算（売り上げが増える）売り上げ合計変数:totalに今回の売上を計上し更新していく。
 			return items[select].price ;
 		}

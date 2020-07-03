@@ -5,17 +5,17 @@ public class Item {
 	 * 商品の名前
 	 */
 	String name;
-	
+
 	/**
 	 *商品の単価
 	 */
 	int price;
-	
+
 	/**
 	 *商品の在庫数を実装
 	 */
 	int stock;
-	
+
 	/**
 	 * 商品のコンストラクタ（複数の情報を取り込んで仕事をする設定に変更）
 	 * これにより、商品名と価格をコンパクトにまとめることが可能となった。
@@ -27,6 +27,6 @@ public class Item {
 		this.name = name;
 		this.price = price;
 		this.stock = stock;
-		
+
 	}
 }
