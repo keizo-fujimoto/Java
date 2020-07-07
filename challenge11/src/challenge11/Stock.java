@@ -5,7 +5,9 @@ public class Stock {
 	public static void main(String[] args) {
 
 		Ad[] Ads = prepareAds();
+		Ad[] Add = prepareAdd();
 		showMenu(Ads);
+		showAd(Add);
 		//		トラブルメーカー社は中古車販売を始めました。現在は3台のみで「軽自動車」、「ファミリーカー」の車種を扱っています。
 		//		広告掲載として軽自動車は、車種名、燃費、乗員、金額、エアコン有無の5項目掲載します。
 		//		ファミリーカーは、車種名、燃費、乗員、金額、排気量、自動運転有無の6項目表示します。
@@ -17,81 +19,51 @@ public class Stock {
 	public static void showMenu(Ad[] j) {
 		//商品一覧を表示
 		for (int i = 0; i < j.length; i++) {
+			//if(j[i].ac != null) {
+
 			System.out.println(j[i].name);
-			System.out.println("金額："+j[i].price);
-			System.out.println("燃費："+j[i].fuel);
-			System.out.println("乗員："+j[i].passengers);
-			System.out.println("エアコン"+j[i].ac);
+			System.out.println("金額：" + j[i].price);
+			System.out.println("燃費：" + j[i].fuel + " " + "乗員：" + j[i].passengers);
+			System.out.println("エアコン：" + j[i].ac);
 			System.out.println();
+			//}
 		}
+		//		@Override
+		//		public static void
+		//			System.out.println(j[i].name);
+		//			System.out.println("金額："+j[i].price);
+		//			System.out.println("燃費："+j[i].fuel+" "+"乗員："+j[i].passengers);
+
 	}
 
-	//
-	//		現在保有車種
-	//
-	//		車種名：A
-	//		種別：軽自動車
-	//		燃費：22
-	//		乗員：4
-	//		金額：300000
-	//		エアコン有無：有り
-	//
-	//		車種名：B
-	//		種別：軽自動車
-	//		燃費：23
-	//		乗員：4
-	//		金額：280000
-	//		エアコン有無：無し
-	//
-	//		車種名：H
-	//		種別：ファミリーカー
-	//		燃費：18
-	//		乗員：5
-	//		金額：450000
-	//		排気量：1000
-	//		自動運転有無：有//@Override
-	//
-	//private static Item[] prepareItems() {
-	// 商品の準備(商品名,価格,在庫数)
+	public static void showAd(Ad[] k) {
 
-	//		広告表示例
-
-	//		A
-	//name
-
-	//		金額：300000
-	//price
-
-	//		燃費：22
-	//fuel
-
-	//		乗員4
-	//passengers
-
-	//		エアコン：有り
-	//		ac 有り
-	//
-
-	//		B
-	//		金額：280000
-	//		燃費：23
-	//		乗員4
-	//		エアコン：無し
-	//
-	//		H
-	//		金額：450000
-	//		燃費：18　
-	//		乗員：5
-	//		排気量：1000
-	//		自動運転有無：有 @Override
+		for (int l = 0; l < k.length; l++) {
+			System.out.println("排気量：" + k[l].exhaust);
+			System.out.println("自動運転有無：" + k[l].selfdrive);
+		}
+	}
 
 	private static Ad[] prepareAds() {
 		Ad[] j = new Ad[] {
 				new Ad("A", 300000, 22, 4, "有り"),
 				new Ad("B", 280000, 23, 4, "無し"),
-				//new Ad("H", 450000, 18, 5, 1000, "有り"),
+				new Ad("H", 450000, 18, 5, null),
 				// TODO 自動生成されたメソッド・スタブ
 		};
 		return j;
 	}
+
+	private static Ad[] prepareAdd() {
+		Ad[] k = new Ad[] {
+				new Ad(100, "有")
+		};
+		return k;
+
+	}
 }
+//H
+//金額：450000
+//燃費：18　乗員：5
+//排気量：1000
+//自動運転有無：有

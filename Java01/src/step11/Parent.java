@@ -7,7 +7,7 @@ abstract class Parent {
 	public void parent02() {
 		System.out.println("parent02");
 	}
-	
+
 	abstract void parent03();
 }
 
