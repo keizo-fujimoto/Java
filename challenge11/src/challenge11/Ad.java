@@ -1,6 +1,6 @@
 package challenge11;
 
-public class Ad extends Stock {
+public class Ad {
 
 	// 商品の名前
 
