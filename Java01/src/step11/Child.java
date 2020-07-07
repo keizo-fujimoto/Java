@@ -16,5 +16,6 @@ public class Child extends Parent {
 
 	@Override
 	void parent03() {
+		
 	}
 }
