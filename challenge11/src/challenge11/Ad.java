@@ -1,9 +1,6 @@
 package challenge11;
 
 public class Ad {
-
-	// 商品の名前
-
 	//車種
 	String name;
 	//燃費
@@ -18,15 +15,14 @@ public class Ad {
 	int exhaust;
 	//自動運転有無
 	String selfdrive;
-	//コンストラクタ（複数の情報を取り込んで設定）
 
+	//コンストラクタ
 	Ad(String name, int price, int fuel, int passengers, String ac) {
 		this.name = name;
 		this.price = price;
 		this.fuel = fuel;
 		this.passengers = passengers;
 		this.ac = ac;
-
 	}
 
 	//public Ad(String string, int i, int j, int k, int l, String string2) {
@@ -35,15 +31,8 @@ public class Ad {
 	Ad(int exhaust, String selfdrive) {
 		this.exhaust = exhaust;
 		this.selfdrive = selfdrive;
-
 	}
-
+}
 //	public Ad(String string, int i, int j, int k) {
 //		// TODO 自動生成されたコンストラクター・スタブ
 //	}
-
-	// TODO 自動生成されたメソッド・スタブ
-
-}
-
-
