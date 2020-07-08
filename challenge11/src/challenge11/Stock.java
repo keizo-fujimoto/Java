@@ -33,6 +33,8 @@ public class Stock {
 					System.out.println("排気量：" + k[l].exhaust);
 					System.out.println("自動運転有無：" + k[l].selfdrive);
 				}
+
+
 			}
 			//		@Override
 			//		public static void
