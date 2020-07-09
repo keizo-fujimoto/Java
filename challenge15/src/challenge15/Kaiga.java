@@ -1,22 +1,15 @@
 package challenge15;
 
-public class Kaiga {
+public class  Kaiga extends List{
+
+	public Kaiga(String string) {
+		super(string);
+		// TODO 自動生成されたコンストラクター・スタブ
+	}
 
 	String name;
 
 
-	 //希望品
-	String goods;
-
-	//資金
-	int money;
-	int i;
-	//金額
-	int price;
-		Kaiga(String goods, long prise, int i ){
-			this.goods = goods;
-			this.price = price;
-			this.i = i;
-
+	 
 }
-}
+

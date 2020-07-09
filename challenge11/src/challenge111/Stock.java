@@ -1,4 +1,4 @@
-package challenge11;
+package challenge111;
 
 public class Stock {
 
@@ -47,7 +47,7 @@ public class Stock {
 		Ad[] j = new Ad[] {
 				new Ad("A", 300000, 22, 4, "有り"),
 				new Ad("B", 280000, 23, 4, "無し"),
-				new Ad("H", 450000, 18, 5, null),
+				new Ad("H", 450000, 18, 5),
 				// TODO 自動生成されたメソッド・スタブ
 		};
 		return j;

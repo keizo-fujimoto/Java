@@ -2,7 +2,7 @@ package challenge15;
 
 public class List {
 
-
+	A a = new a;
 		 // 得意先
 		String name;
 

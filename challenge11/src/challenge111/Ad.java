@@ -1,4 +1,4 @@
-package challenge11;
+package challenge111;
 
 public class Ad {
 	//車種
@@ -24,7 +24,12 @@ public class Ad {
 		this.passengers = passengers;
 		this.ac = ac;
 	}
-
+	Ad(String name, int price, int fuel, int passengers) {
+		this.name = name;
+		this.price = price;
+		this.fuel = fuel;
+		this.passengers = passengers;
+	}
 	//public Ad(String string, int i, int j, int k, int l, String string2) {
 	// TODO 自動生成されたコンストラクター・スタブ
 

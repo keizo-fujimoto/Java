@@ -1,5 +1,6 @@
 package challenge12;
 //身長で比較するためのクラス
+
 public class Height implements SortItem{
 
 	@Override
@@ -7,6 +8,7 @@ public class Height implements SortItem{
 		if( student1.getHeight() > student2.getHeight()) {
 			return false;
 		}
+		String.format(format, args)
 		return true;
 	}
 }
