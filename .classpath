@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="challenge01/src"/>
+	<classpathentry kind="src" path="challenge02/src"/>
+	<classpathentry kind="src" path="challenge03/src"/>
+	<classpathentry kind="src" path="challenge04/src"/>
+	<classpathentry kind="src" path="challenge05/src"/>
+	<classpathentry kind="src" path="challenge06/src"/>
+	<classpathentry kind="src" path="challenge07/src"/>
+	<classpathentry kind="src" path="challenge08/src"/>
+	<classpathentry kind="src" path="challenge09/src"/>
+	<classpathentry kind="src" path="challenge10/src"/>
+	<classpathentry kind="src" path="challenge11/src"/>
+	<classpathentry kind="src" path="challenge13-1/src"/>
+	<classpathentry kind="src" path="challenge15/src"/>
+	<classpathentry kind="src" path="Java01/src"/>
+	<classpathentry kind="src" path="sampel/src"/>
+	<classpathentry kind="src" path="Vender00/src"/>
+	<classpathentry kind="output" path="Java01/bin"/>
+</classpath>
